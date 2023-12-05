@@ -1,0 +1,9 @@
+## Neural Network model report
+
+Data Preprocessing
+Target and Features
+Target(s): The target variable for our model is "IS_SUCCESSFUL," which indicates whether the funding was successful (1) or not (0).
+Features: The features for our model include metadata about each organization, such as EIN, NAME, APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, and ASK_AMT.
+
+Removed Variables
+The EIN and NAME columns were removed as they are identification columns and don't contribute to the predictive power of the model.
