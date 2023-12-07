@@ -1,0 +1,28 @@
+Data Preprocessing
+
+What variable(s) are the target(s) for your model?
+The target variable for the model is "IS_SUCCESSFUL," indicating whether the funding was successful (1) or not (0).
+
+What variable(s) are the features for your model?
+The features for the model include metadata about each organization, such as EIN, NAME, APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, and ASK_AMT.
+
+What variable(s) should be removed from the input data because they are neither targets nor features?
+The variables EIN and NAME were removed from the input data as they are identification columns and do not contribute to the predictive power of the model.
+
+Compiling, Training, and Evaluating the Model
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+The neural network model has three layers: two hidden layers with 5 and 3 neurons, respectively, and an output layer with 1 neuron.
+Activation functions used:
+Hidden layers: Tanh activation functions were chosen to introduce non-linearity.
+Output layer: Sigmoid activation function to produce binary classification probabilities.
+
+Were you able to achieve the target model performance?
+The model achieved an accuracy of approximately 73.02% on the test data. Unable to reach 75% accuracy. 
+
+What steps did you take in your attempts to increase model performance?
+Initially, the model was trained with default architecture and parameters.
+The number of neurons in hidden layers was adjusted to observe the impact on performance.
+Activation functions were chosen to introduce non-linearity and capture complex relationships.
+The model was trained for 100 epochs to allow for learning.
+Hyperparameter tuning and alternative model architectures, such as Random Forest or Gradient Boosting, were suggested as potential avenues for improvement.
